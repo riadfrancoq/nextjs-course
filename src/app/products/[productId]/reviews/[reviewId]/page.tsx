@@ -8,11 +8,11 @@ function getRandomInt(count: number){
 export default function ReviewDetails({params}: {
     params: { productId: string, reviewId: string }
 }) {
-    const random : number = getRandomInt(2);
+    //const random : number = getRandomInt(2);
 
-    if (random === 1) {
-        throw new Error("Error loading review")
-    }
+    //if (random === 1) {
+        //throw new Error("Error loading review")
+    //}
     if (parseInt(params.reviewId) > 1000 || Number.isNaN(Number(params.reviewId)) ) {
         notFound();
     }
